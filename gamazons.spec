@@ -9,7 +9,6 @@ License:	GPL
 Group:		Games/Boards
 URL:		http://www.yorgalily.org/gamazons/
 Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ImageMagick
 BuildRequires:	libgnomeui2-devel
 
