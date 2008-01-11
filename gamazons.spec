@@ -42,17 +42,6 @@ More info can be found at http://www.cs.ualberta.ca/~tegos/amazons/
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-mkdir -p %{buildroot}%{_menudir}
-cat << _EOF_ > %{buildroot}%{_menudir}/%{name}
-?package(%{name}): \
- command="%{_gamesbindir}/%{name}" \
- icon="gnome-gamazons.png" \
- longtitle="Amazons chess" \
- needs="x11" \
- section="More Applications/Games/Boards" \
- title="Gamazons" \
- xdg="true"
-_EOF_
 
 desktop-file-install --vendor="" \
   --remove-category="Application" \
@@ -86,7 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/*.desktop
 %{_datadir}/%{name}
 %{_datadir}/pixmaps/*
-%{_menudir}/%{name}
 %{_iconsdir}/gnome-gamazons.png
 %{_miconsdir}/gnome-gamazons.png
 %{_liconsdir}/gnome-gamazons.png
