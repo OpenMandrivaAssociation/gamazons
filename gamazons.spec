@@ -1,5 +1,5 @@
 %define	version	0.83
-%define release	%mkrel 7
+%define release	%mkrel 8
 
 Summary:	A board game similar to chess and go combined
 Name:		gamazons
@@ -12,6 +12,8 @@ Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ImageMagick
 BuildRequires:	libgnomeui2-devel
+# (tv) for /usr/bin/desktop-file-install:
+BuildRequires:	desktop-file-utils
 
 %description
 Amazons is a game played on a 10x10 chess board. Each side has four pieces
