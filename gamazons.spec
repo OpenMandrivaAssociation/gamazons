@@ -10,7 +10,7 @@ Group:		Games/Boards
 URL:		http://www.yorgalily.org/gamazons/
 Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 BuildRequires:	libgnomeui2-devel
 # (tv) for /usr/bin/desktop-file-install:
 BuildRequires:	desktop-file-utils
