@@ -1,14 +1,15 @@
 %define	version	0.83
-%define release	%mkrel 8
+%define release	%mkrel 9
 
 Summary:	A board game similar to chess and go combined
 Name:		gamazons
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2
 Group:		Games/Boards
 URL:		http://www.yorgalily.org/gamazons/
 Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
+Patch0:		gamazons-0.83-fix-desktop-file.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	imagemagick
 BuildRequires:	libgnomeui2-devel
@@ -30,11 +31,10 @@ must move and fire an arrow, so every turn there is one less square
 available on the board. Try and block in your opponent or section off a
 good chunk of the board for yourself.
 
-More info can be found at http://www.cs.ualberta.ca/~tegos/amazons/
-
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_5x --bindir=%{_gamesbindir}
@@ -46,8 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 
 desktop-file-install --vendor="" \
-  --remove-category="Application" \
-  --add-category="X-MandrivaLinux-MoreApplications-Games-Boards;Game;BoardGame" \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
 
 mkdir -p $RPM_BUILD_ROOT%{_iconsdir} \
