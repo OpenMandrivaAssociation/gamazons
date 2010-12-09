@@ -1,5 +1,5 @@
 %define	version	0.83
-%define release	%mkrel 9
+%define release	%mkrel 10
 
 Summary:	A board game similar to chess and go combined
 Name:		gamazons
