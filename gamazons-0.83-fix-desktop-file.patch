@@ -1,0 +1,22 @@
+Index: gamazons-0.83/pixmaps/gamazons.desktop
+===================================================================
+--- gamazons-0.83/pixmaps/gamazons.desktop
++++ gamazons-0.83/pixmaps/gamazons.desktop	2009-05-14 10:30:50.000000000 +0200
+@@ -1,5 +1,4 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+ Name=Gamazons
+ Name[ca]=Gamazons
+ Name[cs]=Gamazons
+@@ -29,9 +28,7 @@
+ Name[zh_TW]=Gamazons
+ Comment=Gamazons game
+ Exec=gamazons
+-Icon=gnome-gamazons.png
++Icon=gnome-gamazons
+ Terminal=false
+ Type=Application
+-Categories=GNOME;Application;Game;BoardGame;
+-X-Desktop-File-Install-Version=0.3
+-OnlyShowIn=GNOME;
++Categories=Game;BoardGame;
