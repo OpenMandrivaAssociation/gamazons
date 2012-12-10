@@ -83,3 +83,55 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/gnome-gamazons.png
 %{_liconsdir}/gnome-gamazons.png
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.83-10mdv2011.0
++ Revision: 618395
+- the mass rebuild of 2010.0 packages
+
+* Thu May 14 2009 Samuel Verschelde <stormi@mandriva.org> 0.83-9mdv2010.0
++ Revision: 375632
+- fix Licence
+- fix desktop file (#49436)
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 0.83-8mdv2009.0
++ Revision: 222104
+- BuildRequires desktop-file-utils for /usr/bin/desktop-file-install
+- drop old menu
+- kill re-definition of %%buildroot on Pixel's request
+- import gamazons
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Thu Aug 10 2006 Lenny Cartier <lenny@mandriva.com> 0.83-7mdv2007.0
+- xdg
+
+* Fri Aug 05 2005 Abel Cheung <deaddog@mandriva.org> 0.83-6mdk
+- rebuild
+
+* Mon Nov 29 2004 Abel Cheung <deaddog@mandrake.org> 0.83-5mdk
+- rebuild with correct gpg key
+- move binary to gamesbindir
+
+* Tue Sep 28 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.83-4mdk
+- rebuild
+
+* Sun Aug 17 2003 Abel Cheung <maddog@linux.org.hk> 0.83-3mdk
+- Replace broken package and spec
+
+* Tue Apr 29 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.83-2mdk
+- buildrequires
+
+* Mon Jan 06 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.83-1mdk
+- from Arkadiusz Lipiec <alipiec@elka.pw.edu.pl> :
+	- package created
+
