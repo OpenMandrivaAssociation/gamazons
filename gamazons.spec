@@ -1,5 +1,5 @@
 %define	version	0.83
-%define release	%mkrel 10
+%define release 	11
 
 Summary:	A board game similar to chess and go combined
 Name:		gamazons
@@ -10,7 +10,6 @@ Group:		Games/Boards
 URL:		http://www.yorgalily.org/gamazons/
 Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
 Patch0:		gamazons-0.83-fix-desktop-file.patch
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	imagemagick
 BuildRequires:	pkgconfig(libgnomeui-2.0)
 # (tv) for /usr/bin/desktop-file-install:
