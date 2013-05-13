@@ -12,7 +12,7 @@ Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
 Patch0:		gamazons-0.83-fix-desktop-file.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	imagemagick
-BuildRequires:	libgnomeui2-devel
+BuildRequires:	pkgconfig(libgnomeui-2.0)
 # (tv) for /usr/bin/desktop-file-install:
 BuildRequires:	desktop-file-utils
 
