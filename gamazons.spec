@@ -1,5 +1,5 @@
 %define	version	0.83
-%define release 	11
+%define release 	12
 
 Summary:	A board game similar to chess and go combined
 Name:		gamazons
