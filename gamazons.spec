@@ -7,7 +7,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2
 Group:		Games/Boards
-URL:		http://www.yorgalily.org/gamazons/
+URL:		https://www.yorgalily.org/gamazons/
 Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
 Patch0:		gamazons-0.83-fix-desktop-file.patch
 BuildRequires:	imagemagick
