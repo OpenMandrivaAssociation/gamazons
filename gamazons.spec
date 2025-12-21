@@ -10,6 +10,11 @@ Group:		Games/Boards
 URL:		https://www.yorgalily.org/gamazons/
 Source:		http://www.yorgalily.org/gamazons/src/%{name}-%{version}.tar.bz2
 Patch0:		gamazons-0.83-fix-desktop-file.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	imagemagick
 BuildRequires:	pkgconfig(libgnomeui-2.0)
 # (tv) for /usr/bin/desktop-file-install:
